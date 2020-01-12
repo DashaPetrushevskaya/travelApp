@@ -1,0 +1,44 @@
+.wr-signup {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../media/ocean.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.signup {
+    height: 500px;
+    width: 550px;
+    border-radius: 5px;
+    background-color: rgba(145, 248, 214, 0.4);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    margin: 0;
+}
+.form-group {
+    margin-right: 10px;
+}
+.mail {
+    padding-left: 0;
+}
+button {
+    margin-left: calc(100% - 50% - 40px);
+}
+
+@media all and (max-width: 1200px) {
+    .wr-signup {
+        background-color: rgba(190, 236, 221, 0.7);
+        background-image: none;
+        height: -webkit-fill-available;
+    }
+    form {
+        margin-left: 10px;
+    }
+}
+
+
