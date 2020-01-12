@@ -214,11 +214,17 @@ header {
     .wr-mob {
         padding-top: 15px;
         padding-left: 15px;
+        padding-right: 5px;
         display: flex;
         flex-direction: column;
+        position: fixed;
+        width: 95%;
+        background-color: #303b41;
     }
     .mob-logo {
         margin-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
     }
     .bg-promo .container {
         display: none;
@@ -227,6 +233,10 @@ header {
         display: none;
         position: absolute;
         left: calc(50% + 15px);
+        position: relative;
+    }
+    ul.mob-container {
+        height: 100vh;
     }
     .mob-container li:hover ul {
         display: block;
@@ -235,6 +245,7 @@ header {
         margin-bottom: 10px;
         font-size: 15px;
         text-transform: uppercase;
+        position: relative;
     }
     .mob-container li:hover {
         color: rgb(255, 217, 0);
@@ -259,8 +270,7 @@ header {
         background-size: auto;
         background-repeat: no-repeat;
     }
-}
-    
+} 
 
 /*page2*/
 .wr-search {
