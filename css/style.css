@@ -55,6 +55,9 @@ a {
     text-decoration: none;
     color: #fff;
 }
+a:hover {
+    transform: scale(1.1);
+}
 ul {
     list-style: none;
     margin: 0px;
@@ -70,7 +73,6 @@ ul {
     background-blend-mode: soft-light;
     background-size: cover;
     color: #fff;
-    height: 100vh;
 }
 header {
     background-color: rgba(13, 13, 125, 0.6);
@@ -80,10 +82,7 @@ header {
 }
 .bg-promo .container {
     max-width: 1245px;
-    width: 100%;
     margin: 0 auto;
-    padding-right: 15px;
-    padding-left: 80px;
 }
 .contact-info {
     display: flex;
@@ -168,9 +167,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
     justify-content: center;
-    padding-left: 65px;
+    padding-top: 15%;
+    padding-bottom: 175px;
 }
 .wr-content h1,
 .wr-content h2 {
@@ -180,12 +179,12 @@ header {
 }
 .wr-content h1 {
     font-size: 75px; 
-    margin-top: 245px;
+    margin-bottom: 40px;
 }
 .wr-content h2 {
     font-size: 40px;
     letter-spacing: 13px;
-    margin-top: 20px;
+    margin-bottom: 50px;
     text-transform: uppercase;
 }
 .wr-content p {
@@ -193,7 +192,7 @@ header {
     font-size: 18px;
     max-width: 740px;
     text-align: center;
-    margin-top: 40px;
+    margin-bottom: 55px;
     line-height: 25px;
 }
 .wr-content a {
@@ -201,7 +200,6 @@ header {
     border-radius: 10px;
     background-color: #cc9800;
     padding: 24px 60px;
-    margin-top: 60px;
     font-family: 'montserrat-medium', sans-serif;
     font-size: 15px;
     text-transform: uppercase;
@@ -210,6 +208,67 @@ header {
 .wr-mob {
     display: none;
 }
+@media screen and (max-width: 1100px) {
+    .wr-mob {
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 5px;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        width: 98%;
+        background-color: #303b41;
+    }
+    .mob-logo {
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bg-promo .container {
+        display: none;
+    }
+    .mob-container ul {
+        display: none;
+        position: relative;
+        left: calc(50% - 135px);
+    }
+    ul.mob-container {
+        height: 100vh;
+    }
+    .mob-container li:hover ul {
+        display: block;
+    }
+    .mob-container li {
+        margin-bottom: 10px;
+        font-size: 15px;
+        text-transform: uppercase;
+        position: relative;
+    }
+    .mob-container li:hover {
+        color: rgb(255, 217, 0);
+    }
+    .wr-content {
+        padding-left: 0;
+    }
+    .wr-content h1 {
+        font-size: 60px;
+        margin-top: 50px;
+    }
+    .wr-content h2 {
+        font-size: 40px;
+        letter-spacing: 5px;
+    }
+    .wr-content p {
+        min-width: 0;
+    }
+
+    .bg-promo {
+        background-image: url(../media/main1/mainblack.png), url(../media/main1/main_optimized.jpg);
+        background-size: auto;
+        background-repeat: no-repeat;
+    }
+} 
+
 @media screen and (max-width: 750px) {
     .wr-mob {
         padding-top: 15px;
@@ -231,8 +290,7 @@ header {
     }
     .mob-container ul {
         display: none;
-        position: absolute;
-        left: calc(50% + 15px);
+        left: calc(50% - 135px);
         position: relative;
     }
     ul.mob-container {
@@ -336,7 +394,7 @@ align-items: center;
 text-transform: uppercase;
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width: 1250px) {
     .wr-search form {
         display: block;
         min-width: 0;
@@ -355,6 +413,7 @@ text-transform: uppercase;
 .wr-aboutus {
     background-image: url(../media/main3/main-right.png);
     background-position: right;
+    background-size: cover;
     display: flex;
 }
 .wr-aboutus .img-main-left {
@@ -401,7 +460,7 @@ text-transform: uppercase;
     font-size: 37px;
     margin-bottom: 45px;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1100px) {
     .img-main-left {
         display: none;
     }
@@ -474,13 +533,14 @@ text-transform: uppercase;
     height: 71px;
     margin-right: 45px;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1100px) {
     .wr-services .services {
         display: block;
     }
     .services li {
         min-width: 0;
         margin-bottom: 25px;
+        justify-content: center;
     }
     .services .info-about {
         padding-left: 15px;
@@ -494,6 +554,7 @@ text-transform: uppercase;
 .wr-tourcost {
     background-image: url(../media/main5/main.png), url(../media/main5/main2.png);
     background-repeat: no-repeat, repeat;
+    background-size: contain;
     background-position: top, bottom;
     overflow: hidden;
 }
@@ -569,7 +630,7 @@ text-transform: uppercase;
     width: 75px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1100px) {
     .wr-tourcost h3,
     .wr-tourcost h2 {
         font-size: 30px;
@@ -693,7 +754,7 @@ text-transform: uppercase;
     border-radius: 8px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1100px) {
     .wr-tourselection h3,
     .wr-tourselection {
         font-size: 30px;
@@ -720,6 +781,13 @@ text-transform: uppercase;
     .wr-tourselection p {
         text-align: left;
     }
+    .tourselectiontransport img {
+        margin-right: 0;
+    }
+    .tourselectiontransport .flight,
+    .tourselectiontransport .cab {
+        position: inherit;
+    }
 }
 /*page7*/
 .wr-packandgo {
@@ -729,6 +797,7 @@ text-transform: uppercase;
     padding-top: 80px;
     padding-bottom: 150px;
     overflow: hidden;
+    background-size: contain;
 }
 
 .pack-and-go {
@@ -842,7 +911,7 @@ text-transform: uppercase;
     margin-bottom: 5px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1100px) {
     .pack-and-go h2,
     .pack-and-go h3 {
         font-size: 30px;
@@ -880,6 +949,7 @@ text-transform: uppercase;
     padding-top: 110px;
     padding-bottom: 80px;
     overflow: hidden;
+    background-size: cover;
 }
 .go-exploore {
     display: flex;
@@ -906,7 +976,6 @@ text-transform: uppercase;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
-    position: relative;
     max-width: 385px;
     margin-right: 48px;
 }
@@ -922,7 +991,7 @@ text-transform: uppercase;
 }
 .directions div img {
     border-radius: 10px 10px 0 0;
-    margin-bottom: 70px;
+    margin-bottom: calc(50% - 225px);
 }
 .directions div a {
     text-transform: uppercase;
@@ -939,7 +1008,6 @@ text-transform: uppercase;
     min-width: 175px;
     padding-top: 20px;
     padding-bottom: 20px;
-    position: absolute;
     bottom: calc(50% + 95px);
 }
 .directions div p {
@@ -957,7 +1025,7 @@ text-transform: uppercase;
     text-align: center;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1100px) {
     .wr-goexploore {
         background-repeat: repeat-y;
     }
@@ -985,6 +1053,8 @@ text-transform: uppercase;
     align-items: center;
     padding-right: 95px;
     margin-left: 60px;
+    padding-top: 95px;
+    padding-bottom: 70px;
 }
 .wr-combinedtours .container {
     border: 1px solid;
@@ -1012,13 +1082,12 @@ text-transform: uppercase;
     margin-bottom: 45px;
     font-family: 'montserrat-regular';
     font-size: 20px;
-    min-width: 300px;
-    justify-content: space-between;
 }
 .wr-combinedtours .img div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 60px;
 }
 .wr-combinedtours p {
     max-width: 515px;
@@ -1044,7 +1113,7 @@ text-transform: uppercase;
     padding: 20px 45px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1100px) {
     .wr-combinedtours {
         background-position: center;
         padding-left: 10px;
@@ -1183,7 +1252,7 @@ margin-bottom: 10px;
 .wr-contact {
     background-image: url(../media/main11/main-1.png);
     background-position: top;
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     font-family: 'lato-regular';
     font-size: 16px;
@@ -1270,7 +1339,7 @@ margin-bottom: 10px;
     transition: 3s;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1100px) {
     .wr-contact {
         background-image: url(../media/main11/main.png);
         background-position: inherit;
@@ -1288,7 +1357,7 @@ margin-bottom: 10px;
         margin-bottom: 15px;
     }
     .social-infa {
-        justify-content: center;
+        display: none;
     }
 }
 

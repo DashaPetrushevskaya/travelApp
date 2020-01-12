@@ -10,7 +10,7 @@ $(".burger")
     $("ul.mob-container").addClass("hidden");
   }
 });
-
+/*
 $(".tourselectiontransport")
 .find("div")
 .click(function () {
@@ -42,6 +42,6 @@ $(".tourselectiontransport")
     nextTabIndex = curActiveIndex + 1;
   }
   tabsArray[nextTabIndex].css("background-color", noColor);
-});
+});*/
 
 
