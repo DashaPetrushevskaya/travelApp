@@ -63,6 +63,14 @@ ul {
     margin: 0px;
     padding: 0px;
 }
+h2 {
+    font-family: 'montserrat-black';
+    font-size: 37px;
+}
+h3 {
+    font-family: 'montserrat-regular';
+    font-size: 37px;
+}
 
 .hidden{
     display: none;
@@ -329,6 +337,18 @@ header {
         background-repeat: no-repeat;
     }
 } 
+@media screen and (max-width: 750px) {
+.wr-mob {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 85%;
+    background-color: #303b41;
+}
+}
 
 /*page2*/
 .wr-search {
@@ -343,8 +363,6 @@ header {
     padding-bottom: 80px;
 }
 .wr-search h2 {
-    font-family: 'montserrat-black';
-    font-size: 37px;
     text-transform: uppercase;
     margin-bottom: 70px;
 }
@@ -451,13 +469,9 @@ text-transform: uppercase;
     padding-left: 48px;
 }
 .wr-aboutus h2 {
-    font-family: 'montserrat-black';
-    font-size: 37px;
     margin-bottom: 20px;
 }
 .wr-aboutus h3 {
-    font-family: 'montserrat-regular';
-    font-size: 37px;
     margin-bottom: 45px;
 }
 @media screen and (max-width: 1100px) {
@@ -497,13 +511,9 @@ text-transform: uppercase;
 }
 
 .wr-services h2 {
-    font-family: 'montserrat-black';
-    font-size: 37px;
     margin-bottom: 30px;
 }
 .wr-services h3 {
-    font-family: 'montserrat-regular';
-    font-size: 37px;
     margin-bottom: 80px;
 }
 .services p {
@@ -567,13 +577,9 @@ text-transform: uppercase;
     padding-bottom: 95px;
 }
 .wr-tourcost h2 {
-    font-family: 'montserrat-black';
-    font-size: 37px;
     margin-bottom: 30px;
 }
 .wr-tourcost h3 {
-    font-family: 'montserrat-regular';
-    font-size: 37px;
     margin-bottom: 70px;
 }
 .tourcost {
@@ -671,13 +677,9 @@ text-transform: uppercase;
     margin-right: 90px;
 }
 .tourselection h2 {
-    font-family: 'montserrat-black';
-    font-size: 37px;
     margin-bottom: 30px;
 }
 .tourselection h3 {
-    font-family: 'montserrat-regular';
-    font-size: 37px;
     margin-bottom: 55px;
 }
 .tourselectiontransport {
@@ -817,13 +819,9 @@ text-transform: uppercase;
     max-height: 263px;
 }
 .pack-and-go h2 {
-    font-family: 'montserrat-black';
-    font-size: 37px;
     margin-bottom: 30px;
 }
 .pack-and-go h3 {
-    font-family: 'montserrat-regular';
-    font-size: 37px;
     text-decoration: underline;
     margin-bottom: 95px;
 }
@@ -958,13 +956,9 @@ text-transform: uppercase;
     width: 100%;
 }
 .go-exploore h2 {
-    font-family: 'montserrat-black';
-    font-size: 37px;
     margin-bottom: 25px;
 }
 .go-exploore h3 {
-    font-family: 'montserrat-regular';
-    font-size: 37px;
     text-transform: uppercase;
     margin-bottom: 60px;
 }
@@ -1069,8 +1063,6 @@ text-transform: uppercase;
 }
 .wr-combinedtours h2 {
     margin-bottom: 25px;
-    font-family: 'montserrat-black';
-    font-size: 37px;
 }
 .wr-combinedtours h4 {
     margin-bottom: 45px;
@@ -1159,13 +1151,9 @@ text-transform: uppercase;
     flex-direction: column;
 }
 .customer-reviews h2 {
-    font-family: 'montserrat-black';
-    font-size: 37px;
     margin-bottom: 25px;
 }
 .customer-reviews h3 {
-    font-family: 'montserrat-regular';
-    font-size: 37px;
     margin-bottom: 75px;
 } 
 .customer-reviews .info {
@@ -1268,14 +1256,10 @@ margin-bottom: 10px;
     align-items: center;
 }
 .contact-us h2 {
-    font-family: 'montserrat-black';
-    font-size: 37px;
     margin-bottom: 30px;
     color: #fff;
 }
 .contact-us h3 {
-    font-family: 'montserrat-regular';
-    font-size: 37px;
     margin-bottom: 85px;
     color: #fff;
 } 
