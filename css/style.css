@@ -96,6 +96,7 @@ header {
     display: flex;
     align-items: center;
     border-bottom: 3px solid;
+    border-color: gray;
     justify-content: space-between;
     height: 68px;
 }
@@ -1068,20 +1069,37 @@ text-transform: uppercase;
     margin-bottom: 45px;
     font-family: 'montserrat-regular';
     font-size: 24px;
+    font-weight: 600;
 }
 .wr-combinedtours .img {
     display: flex;
+    align-items: center;
     margin-bottom: 45px;
     font-family: 'montserrat-regular';
     font-size: 20px;
 }
-.wr-combinedtours .img div {
+.wr-combinedtours .wr-img-caption  {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 60px;
 }
-.wr-combinedtours p {
+.wr-combinedtours .img-caption {
+    width: 55px;
+    height: 55px;
+}
+.wr-combinedtours img {
+    margin-bottom: 10px;
+}
+.wr-combinedtours img:nth-child(3) {
+    margin-bottom: 15px;
+}
+.wr-combinedtours .caption {
+    font-family: 'montserrat-regular';
+    font-size: 24px;
+    font-weight: 600;
+}
+.wr-combinedtours .about-tour {
     max-width: 515px;
     margin-bottom: 35px;
     font-family: 'lato-medium';
