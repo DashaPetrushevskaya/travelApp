@@ -260,7 +260,9 @@ header {
         color: rgb(255, 217, 0);
     }
     .wr-content {
-        padding-left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 140px;
         text-align: center;
     }
     .wr-content h1 {
@@ -282,6 +284,14 @@ header {
         background-position: center;
     }
 }    
+@media screen and (max-width: 360px) {
+    .wr-content h1 {
+        font-size: 45px;
+    }
+    .wr-content h2 {
+        font-size: 15px;
+    }
+}
 
 /*page2*/
 .wr-search {
@@ -416,15 +426,20 @@ text-transform: uppercase;
         line-height: 20px;
         padding-top: 88px;
         padding-bottom: 45px;
-        padding-left: 10px;
-        padding-right: 5px;
+        padding-left: 15px;
+        padding-right: 15px;
         width: 100%;
     }
     .wr-aboutus h3,
     .wr-aboutus h2 {
         font-size: 34px;
     }
-
+}
+@media screen and (max-width: 360px) {
+    .wr-aboutus h3,
+    .wr-aboutus h2 {
+        font-size: 28px;
+    }
 }
 /*page4*/
 .wr-services .container {
@@ -480,6 +495,10 @@ text-transform: uppercase;
     .wr-services .services {
         display: block;
     }
+    .wr-services .container {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
     .services li {
         min-width: 0;
         margin-bottom: 25px;
@@ -491,6 +510,7 @@ text-transform: uppercase;
     .wr-services h2,
     .wr-services h3 {
         font-size: 30px;
+        text-align: center;
     }
 }
 /*page5*/
@@ -971,6 +991,8 @@ text-transform: uppercase;
     }
     .directions {
         flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .directions div {
         margin-bottom: 15px;
