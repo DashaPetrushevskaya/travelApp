@@ -886,9 +886,9 @@ text-transform: uppercase;
         margin-bottom: 15px;
     }
     .pack-and-go .second-tour {
-        transform: none;
         position: inherit;
         bottom: 0;
+        transform: scale(0.9);
     }
     .pack-and-go .tour .second-tour img {
         max-height: 240px;
@@ -1003,6 +1003,9 @@ text-transform: uppercase;
     .directions div {
         margin-bottom: 15px;
         margin-right: 0;
+    }
+    .sl-container {
+        width: 90%;
     }
 }
 
