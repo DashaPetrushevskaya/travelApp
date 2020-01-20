@@ -3,7 +3,7 @@ $('.slider-container').slick({
   autoplaySpeed: 3000,
 });
 
-$('.slider-mb').slick({
+$('.slider-container1').slick({
   autoplay: true,
   autoplaySpeed: 3000,
 });

@@ -865,7 +865,7 @@ text-transform: uppercase;
 .pack-and-go .second-tour a {
     margin-bottom: 5px;
 }
-.slider-mb {
+.slider-container1 {
     display: none;
 }
 
@@ -900,6 +900,9 @@ text-transform: uppercase;
         margin-bottom: 20px;
     }
     .pack-and-go .second-tour::after {
+        display: none;
+    }
+    .tour {
         display: none;
     }
 }
@@ -1372,6 +1375,10 @@ margin-bottom: 10px;
 }
 .wr-footer p:nth-child(2){
     margin-bottom: 0;
+}
+
+.sl-container .slick-list{
+width: 700px;
 }
 
 
