@@ -8,6 +8,11 @@ $('.sl-container').slick({
   autoplaySpeed: 3000,
 });
 
+$('.sl-tourcost').slick({
+  autoplay: true,
+  autoplaySpeed: 3000,
+});
+
 $(".burger")
 .click(function () {
   if($("ul.mob-container").hasClass("hidden")){

@@ -595,6 +595,9 @@ text-transform: uppercase;
     height: 72px;
     width: 75px;
 }
+.sl-tourcost{
+    display: none;
+}
 
 @media screen and (max-width: 1100px) {
     .wr-tourcost {
@@ -605,17 +608,20 @@ text-transform: uppercase;
     .wr-tourcost h2 {
         font-size: 30px;
     }
-    .tourcost {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        justify-content: center;
-    }
+
     .lowbudget,
     .midbudget,
     .highbudget {
     margin-bottom: 20px;
-    width: 80%;
+    width: 90%;
+    }
+
+    .sl-tourcost{
+        display: inherit;
+    }
+
+    .tourcost-sl{
+        display: none;
     }
 }
 
